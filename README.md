@@ -1,2 +1,2 @@
-# wm-s-Ionic
-Ionic2 study
+# GodSay
+The dream list！
