@@ -10,10 +10,10 @@ import Toast from 'react-native-easy-toast'
 import Icon from 'react-native-vector-icons/Ionicons'
 
 import Header from './pages/components/Header';
-import Homepage from './pages/NewPage/Homepage';
-import Studypage from './pages/Train/Studypage';
-import Worktable from './pages/Worktable/Worktable';
-import Storepage from './pages/Exchange/Storepage';
+import SideMenu from './pages/SideMenu/SideMenu';
+import Home from './pages/Home/Home';
+import NetVisit from './pages/NetVisit/NetVisit';
+import Space from './pages/Space/Space';
 import Mypage from './pages/MyPage/Mypage';
 //import config from './util/util';
 
@@ -66,10 +66,10 @@ export default class MainScreen extends Component {
         <Header tag={this.state.Headerprop} pfn={this.fnstorage.bind(this)} />
         <TabNavigator hidesTabTouch={false} tabBarStyle={styles.tab}>
           {this._renderTabItem(HOME_NORMAL, HOME_FOCUS, 'HOME', '欢喜', this._createChildView('HOME'))}
-          {this._renderTabItem(CATEGORY_NORMAL, CATEGORY_FOCUS, 'CATEGORY', '花园', this._createChildView('CATEGORY'))}
+          {this._renderTabItem(CATEGORY_NORMAL, CATEGORY_FOCUS, 'CATEGORY', '首页', this._createChildView('CATEGORY'))}
           {this._renderTabItem(FAXIAN_NORMAL, FAXIAN_FOCUS, 'FAXIAN', '访问', this._createChildView('FAXIAN'))}
           {this._renderTabItem(CART_NORMAL, CART_FOCUS, 'CART', '友荐', this._createChildView('CART'))}
-          {this._renderTabItem(PERSONAL_NORMAL, PERSONAL_FOCUS, 'PERSONAL', '自己', this._createChildView('PERSONAL'))}
+          {this._renderTabItem(PERSONAL_NORMAL, PERSONAL_FOCUS, 'PERSONAL', '世界', this._createChildView('PERSONAL'))}
         </TabNavigator>
         <Toast
           ref="toast"
